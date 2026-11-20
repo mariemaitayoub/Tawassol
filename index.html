@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawassoul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-[#F3F4F6] font-mono">
+    <header class="flex justify-center  border rounded-lg font-mono font-bold">
+        <div class="">
+            <img src="jvsij" alt="">
+            <p class="text-[#059669]">Tawassoul</p>
+        </div>
+        <h1>Gestionnaire des participants</h1>
+    </header>
+    <main>
+        <section class="flex  gap-4 p-4">
+            <div class="flex-1 flex justify-between border rounded-2xl">
+                <img src="" alt="">
+                <div>
+                    <h1>12</h1>
+                    <p>Total des participants</p>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-between border rounded-2xl">
+                <img src="" alt="">
+                <div>
+                    <h1>2</h1>
+                    <p>Selectionnes</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>ajouter un participant</h2>
+            <form action="" id="form-participant">
+                <label for="nom">Nom complet </label>
+                <input name="nom" type="text" id="nom">
+                <label for="">Formation </label>
+                <select name="" id="formation">
+                    <option value="Bureautique">Bureautique</option>
+                    <option value="Web">Web</option>
+                    <option value="Langues">Langues</option>
+                </select>
+                <label for="email" >email </label>
+                <input name="email"  id="email" type="email">
+                <button id="submit" type="submit">+ajouter</button>
+            </form>
+        </section>
+        <section>
+            <h2>Filtrer</h2>
+            <input type="search" id="recherche" placeholder="Rechercher...">
+            <button type="button">Toutes</button>
+            <button type="button">Bureautique</button>
+            <button type="button">Web</button>
+            <button type="button">Langues</button>
+        </section>
+
+          <section>
+            <h2>Liste</h2>
+            <!-- <button type="button" id="supprimer-selection">Supprimer sélection</button> -->
+            <ul id="liste"></ul>
+        </section> 
+    </main>
+
+<script src="js/main.js" type="module"></script>
+</body>
+
+</html>
